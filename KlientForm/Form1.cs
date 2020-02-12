@@ -35,7 +35,8 @@ namespace KlientForm
 
         private void klientButton_Click(object sender, EventArgs e)
         {
-                StartaSändning(textBox1.Text);
+            StartaSändning(textBox1.Text);
+            textBox1.Text = "";
         }
 
         public async void StartaAnslutning()

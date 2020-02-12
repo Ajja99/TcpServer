@@ -80,7 +80,7 @@ namespace TcpServer
                 MessageBox.Show(error.Message, Text); return;
             }
             string username = usernames[k];
-            string s = DateTime.Now + username + ">"
+            string s = DateTime.Now + " " + username + "> "
                 + Encoding.Unicode.GetString(buffert, 0, n)
                 + Environment.NewLine;
             serverTextBox.AppendText(s);
